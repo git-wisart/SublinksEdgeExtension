@@ -1,0 +1,40 @@
+{
+    "filters": [
+        {
+            "id": 0,
+            "name": "SharePoint Online",
+            "condition": "(.+\\.)?sharepoint\\.com\\/sites\\/(.*?)",
+            "sublinks": [
+                {
+                    "id": 0,
+                    "name": "Site Settings",
+                    "baseUrlRxp": "(.+\\.)?sharepoint\\.com\\/sites\\/(.*?)(\\/|$)",
+                    "link": "{BaseUrl}/_layouts/15/settings.aspx"
+                },
+                {
+                    "id": 1,
+                    "name": "Site Permissions",
+                    "baseUrlRxp": "(.+\\.)?sharepoint\\.com\\/sites\\/(.*?)(\\/|$)",
+                    "link": "{BaseUrl}/_layouts/15/user.aspx"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": "Facebook",
+            "condition": "https:\/\/www.facebook.com",
+            "sublinks": [
+                {
+                    "id": 0,
+                    "name": "Facbook link 1",
+                    "link": "blabla"
+                },
+                {
+                    "id": 1,
+                    "name": "Facebook link 2",
+                    "link": "blablabla"
+                }
+            ]
+        }
+    ]
+}
